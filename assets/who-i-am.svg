@@ -1,124 +1,93 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 200" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 170" width="100%" height="100%">
   <defs>
-    <!-- 3D Keycap Gradients -->
-    <linearGradient id="keyTopGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#93c5fd"/>
-      <stop offset="30%" stop-color="#60a5fa"/>
-      <stop offset="100%" stop-color="#3b82f6"/>
+    <!-- Matcha/Sage Green Keycap Gradients (inspired by reference photo) -->
+    <linearGradient id="matchaTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a3e635"/>
+      <stop offset="60%" stop-color="#84cc16"/>
+      <stop offset="100%" stop-color="#65a30d"/>
     </linearGradient>
 
-    <linearGradient id="keyTopGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#c084fc"/>
-      <stop offset="30%" stop-color="#a855f7"/>
-      <stop offset="100%" stop-color="#7c3aed"/>
+    <linearGradient id="matchaSide" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4d7c0f"/>
+      <stop offset="100%" stop-color="#365314"/>
     </linearGradient>
 
-    <linearGradient id="keyBevelLight" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05"/>
-    </linearGradient>
-
-    <linearGradient id="keyBevelDark" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1e1b4b" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.8"/>
-    </linearGradient>
-
-    <!-- Filters -->
     <filter id="keyShadow" x="-20%" y="-20%" width="150%" height="150%">
-      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/>
-    </filter>
-
-    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.45"/>
     </filter>
 
     <style>
-      .key-press-1 {
-        animation: keyPress1 3.2s ease-in-out infinite;
-        transform-origin: center;
+      .keycap-press {
+        animation: keyPress 3s ease-in-out infinite;
       }
-      .key-press-2 {
-        animation: keyPress2 3.2s ease-in-out 0.4s infinite;
-        transform-origin: center;
+      .keycap-press-delay {
+        animation: keyPress 3s ease-in-out 0.25s infinite;
       }
-      .arrow-wiggle {
-        animation: arrowWiggle 2.5s ease-in-out infinite;
-      }
-      .text-glow {
-        animation: textPulse 3s ease-in-out infinite;
+      .doodle-float {
+        animation: doodleWiggle 3.5s ease-in-out infinite;
       }
 
-      @keyframes keyPress1 {
+      @keyframes keyPress {
         0%, 100% { transform: translateY(0px); }
         45% { transform: translateY(0px); }
         50% { transform: translateY(5px); }
         55% { transform: translateY(0px); }
       }
-      @keyframes keyPress2 {
-        0%, 100% { transform: translateY(0px); }
-        45% { transform: translateY(0px); }
-        50% { transform: translateY(5px); }
-        55% { transform: translateY(0px); }
-      }
-      @keyframes arrowWiggle {
+      @keyframes doodleWiggle {
         0%, 100% { transform: rotate(0deg); }
-        50% { transform: rotate(-3deg) scale(1.03); }
-      }
-      @keyframes textPulse {
-        0%, 100% { opacity: 0.9; }
-        50% { opacity: 1; filter: drop-shadow(0 0 8px rgba(34, 211, 238, 0.6)); }
+        50% { transform: rotate(-2deg); }
       }
     </style>
   </defs>
 
-  <!-- Handwritten "Who" -->
-  <g class="arrow-wiggle" transform="translate(45, 80)">
-    <text x="0" y="0" font-family="'Comic Sans MS', 'Caveat', 'Marker Felt', cursive, sans-serif" font-size="44" font-weight="900" fill="#22d3ee" class="text-glow" transform="rotate(-10)">Who</text>
-    <!-- Hand-drawn curved arrow pointing to keycaps -->
-    <path d="M 50 15 Q 90 40 125 35" fill="none" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="2 0"/>
-    <path d="M 115 28 L 128 35 L 118 43" fill="none" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Left: Handwritten "Who" + Hand-drawn Arrow -->
+  <g class="doodle-float" transform="translate(35, 30)">
+    <!-- Handwritten "Who" text as high-contrast paths -->
+    <text x="35" y="42" font-family="'Caveat', 'Comic Sans MS', 'Segoe Print', cursive, sans-serif" font-size="42" font-weight="bold" fill="#f8fafc" letter-spacing="1">Who</text>
+    
+    <!-- Curved Doodle Arrow pointing to first keycap -->
+    <path d="M 65 52 Q 100 75 118 70" fill="none" stroke="#f8fafc" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 108 63 L 120 70 L 110 77" fill="none" stroke="#f8fafc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 
-  <!-- 3D Keycap 1: [ I ] -->
-  <g class="key-press-1" transform="translate(195, 35)">
-    <!-- Base / Bottom Shadow -->
-    <rect x="0" y="12" width="105" height="105" rx="22" fill="#0c1222" filter="url(#keyShadow)"/>
-    <!-- Keycap Body (Front/Side Extrusion) -->
-    <rect x="0" y="6" width="105" height="105" rx="20" fill="url(#keyBevelDark)"/>
-    <rect x="0" y="4" width="105" height="102" rx="20" fill="#1e3a8a"/>
-    <!-- Keycap Top Dish (3D Curved Concave Surface) -->
-    <rect x="12" y="10" width="81" height="81" rx="14" fill="url(#keyTopGrad)"/>
-    <!-- Top Highlight Bevel -->
-    <path d="M 16 12 L 89 12 Q 91 12 87 20 L 23 20 Q 14 20 16 12 Z" fill="url(#keyBevelLight)"/>
-    <!-- Inner Dish Glow -->
-    <rect x="15" y="13" width="75" height="75" rx="12" fill="none" stroke="#93c5fd" stroke-width="1.2" opacity="0.6"/>
-    <!-- Letter Label -->
-    <text x="52" y="62" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="34" font-weight="900" fill="#0f172a" text-anchor="middle" filter="drop-shadow(0 1px 1px rgba(255,255,255,0.4))">I</text>
+  <!-- Center-Left Keycap: [ I ] -->
+  <g class="keycap-press" transform="translate(165, 45)">
+    <!-- Base Shadow -->
+    <rect x="0" y="6" width="76" height="76" rx="18" fill="#0c1222" filter="url(#keyShadow)"/>
+    <!-- Keycap Skirt/Body (Extrusion) -->
+    <rect x="0" y="3" width="76" height="76" rx="17" fill="url(#matchaSide)"/>
+    <rect x="0" y="1" width="76" height="74" rx="17" fill="#4d7c0f"/>
+    <!-- Keycap Top Dish (Concave Spherical Dish) -->
+    <rect x="8" y="7" width="60" height="60" rx="12" fill="url(#matchaTop)"/>
+    <!-- Subtle Top Highlight Rim -->
+    <path d="M 12 9 L 64 9 Q 66 9 63 15 L 17 15 Q 11 15 12 9 Z" fill="#ffffff" opacity="0.35"/>
+    <rect x="10" y="9" width="56" height="56" rx="10" fill="none" stroke="#bef264" stroke-width="1" opacity="0.6"/>
+    <!-- Letter "I" -->
+    <text x="38" y="48" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="28" font-weight="800" fill="#14532d" text-anchor="middle">I</text>
   </g>
 
-  <!-- 3D Keycap 2: [ AM ] -->
-  <g class="key-press-2" transform="translate(325, 35)">
-    <!-- Base / Bottom Shadow -->
-    <rect x="0" y="12" width="135" height="105" rx="22" fill="#0c1222" filter="url(#keyShadow)"/>
-    <!-- Keycap Body (Front/Side Extrusion) -->
-    <rect x="0" y="6" width="135" height="105" rx="20" fill="url(#keyBevelDark)"/>
-    <rect x="0" y="4" width="135" height="102" rx="20" fill="#581c87"/>
+  <!-- Center-Right Keycap: [ AM ] -->
+  <g class="keycap-press-delay" transform="translate(255, 45)">
+    <!-- Base Shadow -->
+    <rect x="0" y="6" width="86" height="76" rx="18" fill="#0c1222" filter="url(#keyShadow)"/>
+    <!-- Keycap Skirt/Body (Extrusion) -->
+    <rect x="0" y="3" width="86" height="76" rx="17" fill="url(#matchaSide)"/>
+    <rect x="0" y="1" width="86" height="74" rx="17" fill="#4d7c0f"/>
     <!-- Keycap Top Dish -->
-    <rect x="12" y="10" width="111" height="81" rx="14" fill="url(#keyTopGrad2)"/>
-    <!-- Top Highlight Bevel -->
-    <path d="M 16 12 L 119 12 Q 121 12 117 20 L 23 20 Q 14 20 16 12 Z" fill="url(#keyBevelLight)"/>
-    <!-- Inner Dish Glow -->
-    <rect x="15" y="13" width="105" height="75" rx="12" fill="none" stroke="#e9d5ff" stroke-width="1.2" opacity="0.6"/>
-    <!-- Letter Label -->
-    <text x="67" y="61" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#1e1b4b" text-anchor="middle" letter-spacing="1" filter="drop-shadow(0 1px 1px rgba(255,255,255,0.4))">AM</text>
+    <rect x="8" y="7" width="70" height="60" rx="12" fill="url(#matchaTop)"/>
+    <!-- Subtle Top Highlight Rim -->
+    <path d="M 12 9 L 74 9 Q 76 9 73 15 L 17 15 Q 11 15 12 9 Z" fill="#ffffff" opacity="0.35"/>
+    <rect x="10" y="9" width="66" height="56" rx="10" fill="none" stroke="#bef264" stroke-width="1" opacity="0.6"/>
+    <!-- Letter "AM" -->
+    <text x="43" y="47" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="22" font-weight="800" fill="#14532d" text-anchor="middle" letter-spacing="1">AM</text>
   </g>
 
-  <!-- Bottom Subtitle / Accent -->
-  <g transform="translate(270, 180)">
-    <text x="0" y="0" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#ec4899" text-anchor="middle" letter-spacing="3" class="text-glow">✦ DEVELOPER · BUILDER · EXPLORER ✦</text>
+  <!-- Right: Doodle Arrow + Sparkle -->
+  <g class="doodle-float" transform="translate(355, 80)">
+    <!-- Curved Arrow from second keycap pointing down -->
+    <path d="M 0 10 Q 15 35 32 30" fill="none" stroke="#f8fafc" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 22 25 L 34 30 L 26 38" fill="none" stroke="#f8fafc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Decorative Hand-drawn Star Sparkle -->
+    <text x="42" y="45" font-family="'Caveat', cursive, sans-serif" font-size="28" font-weight="bold" fill="#a3e635">✦</text>
   </g>
 </svg>

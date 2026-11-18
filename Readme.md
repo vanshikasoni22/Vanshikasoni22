@@ -28,28 +28,20 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/vanshikasoni22/Vanshikasoni22/main/assets/who-i-am.svg" width="380" alt="Who I Am - Keycap Animation" />
+<img src="https://raw.githubusercontent.com/vanshikasoni22/Vanshikasoni22/main/assets/who-i-am.svg" width="400" alt="Who I Am - Keycap Illustration" />
 
 </div>
 
-```python
-# ✨ The Vanshika Soni Protocol
-class Vanshika:
-    def __init__(self):
-        self.status        = "Sophomore B.Tech CSE (AI/ML) @ Newton School of Tech (ADYPU)"
-        self.mission       = "GSoC 2027 Aspirant & Open-Source Contributor"
-        self.craft         = "Co-founder @ AI Automation Agency (n8n + LLM APIs + Client Work)"
-        self.active_quest  = "Contributing to foss42/apidash (Dart & Flutter) ⚡"
-        self.leadership    = "Google Gemini Campus Ambassador 🎓"
-        self.stack_passion = ["RAG Pipelines", "AI Agents & MCP", "3D Web & AR", "Dev Tools"]
+Hey there! I'm **Vanshika Soni** — a second-year B.Tech CSE (AI/ML) student at **Newton School of Technology (ADYPU)** with a strong focus on building intelligent developer tooling, retrieval-augmented generation (RAG) pipelines, and autonomous AI agents.
 
-    def philosophy(self):
-        return "Transforming complex workflows into clean, impactful software ✦"
-```
+My daily work balances three key fronts:
+- 🚀 **Open Source & Tooling**: Actively contributing to [**foss42/apidash**](https://github.com/foss42/apidash) (a modern API client built with Dart & Flutter) with my sights firmly locked on **Google Summer of Code (GSoC) 2027**.
+- 🤖 **AI Agency & Automation**: Co-founder of an AI automation agency where we architect production n8n workflows, LLM API integrations, 3D product configurators, and AR try-on experiences for real-world clients.
+- 🎓 **Campus Leadership**: Serving as a **Google Gemini Campus Ambassador**, organizing workshops, demonstrations, and developer meetups to foster hands-on AI innovation.
 
 <table>
 <tr><td align="center">🎓 <b>Education</b></td><td>B.Tech CSE (AI/ML) · <b>Newton School of Technology (ADYPU)</b> · 2nd Year</td></tr>
-<tr><td align="center">🎯 <b>North Star</b></td><td><b>GSoC 2027 Aspirant</b> · Building developer tools that multiply engineering throughput</td></tr>
+<tr><td align="center">🎯 <b>North Star</b></td><td><b>GSoC 2027 Aspirant</b> · Open-source contributor building high-leverage developer tools</td></tr>
 <tr><td align="center">⚡ <b>Active Sprints</b></td><td>Contributing to <a href="https://github.com/foss42/apidash"><b>foss42/apidash</b></a> · Cracking Dart &amp; Flutter</td></tr>
 <tr><td align="center">🤖 <b>Agency &amp; Roles</b></td><td>Co-founder of AI automation agency (n8n workflows, 3D configurators, AR try-on) · <b>Google Gemini Campus Ambassador</b></td></tr>
 <tr><td align="center">📍 <b>Location</b></td><td>TODO</td></tr>
