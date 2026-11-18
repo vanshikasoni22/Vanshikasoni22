@@ -5,7 +5,7 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=A855F7&center=true&vCenter=true&width=600&lines=AI%2FML+Engineer+in+the+Making;Open-Source+Contributor;Building+AI+Developer+Tools;GSoC+2027+Aspirant;Dart+%26+Flutter+Explorer)](https://git.io/typing-svg)
 
-<img src="assets/hero.svg" width="100%" alt="3D Cyber Developer at Holographic Workstation illustration"/>
+<img src="https://raw.githubusercontent.com/vanshikasoni22/Vanshikasoni22/main/assets/hero.svg" width="100%" alt="3D Cyber Developer at Holographic Workstation illustration"/>
 
 </div>
 
@@ -22,7 +22,7 @@
 
 </div>
 
-<img src="assets/divider.svg" width="100%" alt="---"/>
+<img src="https://raw.githubusercontent.com/vanshikasoni22/Vanshikasoni22/main/assets/divider.svg" width="100%" alt="---"/>
 
 ## 🧠 About Me
 
@@ -35,7 +35,7 @@ I'm a second-year B.Tech CSE (AI/ML) student building toward a career in AI engi
 <tr><td>⚡ Currently</td><td>Contributing to <a href="https://github.com/foss42/apidash">API Dash (foss42/apidash)</a> · Learning Dart &amp; Flutter</td></tr>
 </table>
 
-<img src="assets/divider.svg" width="100%" alt="---"/>
+<img src="https://raw.githubusercontent.com/vanshikasoni22/Vanshikasoni22/main/assets/divider.svg" width="100%" alt="---"/>
 
 ## ⚡ Currently
 
@@ -44,7 +44,7 @@ I'm a second-year B.Tech CSE (AI/ML) student building toward a career in AI engi
 - 🤝 **Contributing to:** [foss42/apidash](https://github.com/foss42/apidash) — a FOSS REST API client (Dart/Flutter codebase)
 - 💡 **Open to:** GSoC 2027 mentorship · open-source collaboration · developer tooling projects
 
-<img src="assets/divider.svg" width="100%" alt="---"/>
+<img src="https://raw.githubusercontent.com/vanshikasoni22/Vanshikasoni22/main/assets/divider.svg" width="100%" alt="---"/>
 
 ## 🛠️ Tech Arsenal
 
@@ -119,7 +119,7 @@ I'm a second-year B.Tech CSE (AI/ML) student building toward a career in AI engi
 
 </div>
 
-<img src="assets/divider.svg" width="100%" alt="---"/>
+<img src="https://raw.githubusercontent.com/vanshikasoni22/Vanshikasoni22/main/assets/divider.svg" width="100%" alt="---"/>
 
 ## 🤖 AI & System Design
 
@@ -143,7 +143,7 @@ flowchart LR
 
 *↑ Typical architecture I work with — client facing API, FastAPI/Node.js gateway, LLM + RAG layer with vector-store retrieval.*
 
-<img src="assets/divider.svg" width="100%" alt="---"/>
+<img src="https://raw.githubusercontent.com/vanshikasoni22/Vanshikasoni22/main/assets/divider.svg" width="100%" alt="---"/>
 
 ## 🚀 Featured Projects
 
@@ -171,7 +171,7 @@ flowchart LR
 </tbody>
 </table>
 
-<img src="assets/divider.svg" width="100%" alt="---"/>
+<img src="https://raw.githubusercontent.com/vanshikasoni22/Vanshikasoni22/main/assets/divider.svg" width="100%" alt="---"/>
 
 ## 💼 Experience & Roles
 
@@ -179,7 +179,7 @@ flowchart LR
 - 🎓 **Google Gemini Campus Ambassador** · Representing Google's Gemini AI ecosystem; running campus workshops and product demos.
 - 🌍 **Open-Source Contributor** · Active across GSSoC, SHAP eSoC, Hacktoberfest, and currently contributing to API Dash (foss42/apidash).
 
-<img src="assets/divider.svg" width="100%" alt="---"/>
+<img src="https://raw.githubusercontent.com/vanshikasoni22/Vanshikasoni22/main/assets/divider.svg" width="100%" alt="---"/>
 
 ## 🌱 Open Source Journey
 
@@ -210,7 +210,7 @@ flowchart LR
 
 </div>
 
-<img src="assets/divider.svg" width="100%" alt="---"/>
+<img src="https://raw.githubusercontent.com/vanshikasoni22/Vanshikasoni22/main/assets/divider.svg" width="100%" alt="---"/>
 
 ## 📬 Connect
 
