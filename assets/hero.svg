@@ -1,0 +1,536 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a13" stop-opacity="0.98"/>
+      <stop offset="50%" stop-color="#0d111e" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#050811" stop-opacity="0.98"/>
+    </linearGradient>
+
+    <linearGradient id="neonCyanPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+
+    <linearGradient id="neonBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#ec4899" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <linearGradient id="glassPanel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#182238" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#0c1322" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <linearGradient id="screenDisplay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#090f1d"/>
+      <stop offset="50%" stop-color="#0e172a"/>
+      <stop offset="100%" stop-color="#070c17"/>
+    </linearGradient>
+
+    <linearGradient id="deskTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#141d2f"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <linearGradient id="deskEdge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="40%" stop-color="#4facfe"/>
+      <stop offset="70%" stop-color="#f093fb"/>
+      <stop offset="100%" stop-color="#f5576c"/>
+    </linearGradient>
+
+    <linearGradient id="hoodieGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="50%" stop-color="#9333ea"/>
+      <stop offset="100%" stop-color="#6b21a8"/>
+    </linearGradient>
+
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b0764"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd2ba"/>
+      <stop offset="100%" stop-color="#e8a58a"/>
+    </linearGradient>
+
+    <linearGradient id="orbCore" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#67e8f9"/>
+      <stop offset="60%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+
+    <!-- 3D Cube Gradients -->
+    <linearGradient id="cubeTop1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/><stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="cubeLeft1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0369a1"/><stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+    <linearGradient id="cubeRight1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c4a6e"/><stop offset="100%" stop-color="#082f49"/>
+    </linearGradient>
+
+    <linearGradient id="cubeTop2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6"/><stop offset="100%" stop-color="#db2777"/>
+    </linearGradient>
+    <linearGradient id="cubeLeft2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#be185d"/><stop offset="100%" stop-color="#9d174d"/>
+    </linearGradient>
+    <linearGradient id="cubeRight2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#831843"/><stop offset="100%" stop-color="#500724"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="highGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="orbPulseBlur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="24" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="mainScreenClip">
+      <rect x="230" y="160" width="310" height="195" rx="10"/>
+    </clipPath>
+
+    <!-- CSS Keyframe Animations -->
+    <style>
+      .floating-slow   { animation: floatSlow 4s ease-in-out infinite; }
+      .floating-med    { animation: floatMed 3.2s ease-in-out 0.8s infinite; }
+      .floating-fast   { animation: floatFast 2.8s ease-in-out 1.5s infinite; }
+      .floating-cube1  { animation: floatCube1 4.5s ease-in-out infinite; }
+      .floating-cube2  { animation: floatCube2 3.8s ease-in-out 1.2s infinite; }
+      
+      .pulse-neon      { animation: pulseNeon 2.4s ease-in-out infinite; }
+      .pulse-orb       { animation: pulseOrb 2s ease-in-out infinite; }
+      .scan-line       { animation: scanLine 3.6s linear infinite; }
+      .blink-cursor    { animation: blink 0.9s steps(1) infinite; }
+      
+      .orbit-ring-1    { animation: orbitCW 8s linear infinite; transform-origin: 770px 115px; }
+      .orbit-ring-2    { animation: orbitCCW 11s linear infinite; transform-origin: 770px 115px; }
+      .orbit-ring-3    { animation: orbitCW 15s linear infinite; transform-origin: 770px 115px; }
+
+      .flow-trace      { stroke-dasharray: 8 6; animation: flowDash 3s linear infinite; }
+      .flow-trace-rev  { stroke-dasharray: 6 8; animation: flowDashRev 4s linear infinite; }
+      
+      .twinkle-1       { animation: twinkle 3s ease-in-out infinite; }
+      .twinkle-2       { animation: twinkle 3s ease-in-out 1s infinite; }
+      .twinkle-3       { animation: twinkle 3s ease-in-out 2s infinite; }
+
+      .code-highlight  { animation: codeGlow 2.5s ease-in-out infinite; }
+      .rgb-keyboard    { animation: rgbCycle 6s linear infinite; }
+
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-10px) rotate(-0.5deg); }
+      }
+      @keyframes floatMed {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-12px) rotate(1deg); }
+      }
+      @keyframes floatFast {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes floatCube1 {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-14px) rotate(4deg); }
+      }
+      @keyframes floatCube2 {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-16px) rotate(-5deg); }
+      }
+      @keyframes pulseNeon {
+        0%, 100% { opacity: 0.6; filter: drop-shadow(0 0 5px rgba(34, 211, 238, 0.4)); }
+        50% { opacity: 1; filter: drop-shadow(0 0 16px rgba(236, 72, 153, 0.8)); }
+      }
+      @keyframes pulseOrb {
+        0%, 100% { transform: scale(1); filter: drop-shadow(0 0 15px rgba(168, 85, 247, 0.7)); }
+        50% { transform: scale(1.06); filter: drop-shadow(0 0 30px rgba(34, 211, 238, 0.9)); }
+      }
+      @keyframes scanLine {
+        0% { transform: translateY(-20px); opacity: 0; }
+        20% { opacity: 0.25; }
+        80% { opacity: 0.25; }
+        100% { transform: translateY(210px); opacity: 0; }
+      }
+      @keyframes blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      @keyframes orbitCW {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes orbitCCW {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(-360deg); }
+      }
+      @keyframes flowDash {
+        from { stroke-dashoffset: 100; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes flowDashRev {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 100; }
+      }
+      @keyframes twinkle {
+        0%, 100% { opacity: 0.2; transform: scale(0.8); }
+        50% { opacity: 0.9; transform: scale(1.3); }
+      }
+      @keyframes codeGlow {
+        0%, 100% { opacity: 0.85; }
+        50% { opacity: 1; text-shadow: 0 0 8px #22d3ee; }
+      }
+      @keyframes rgbCycle {
+        0% { stop-color: #22d3ee; }
+        33% { stop-color: #ec4899; }
+        66% { stop-color: #a855f7; }
+        100% { stop-color: #22d3ee; }
+      }
+    </style>
+  </defs>
+
+  <!-- ════════════ BACKGROUND CONTAINER ════════════ -->
+  <rect x="10" y="10" width="940" height="540" rx="24" fill="url(#bgGradient)" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Cyberpunk Nebula Background Blobs -->
+  <circle cx="180" cy="120" r="140" fill="#7c3aed" opacity="0.08" filter="url(#highGlow)"/>
+  <circle cx="780" cy="110" r="160" fill="#22d3ee" opacity="0.09" filter="url(#highGlow)"/>
+  <circle cx="500" cy="480" r="180" fill="#ec4899" opacity="0.07" filter="url(#highGlow)"/>
+
+  <!-- 3D Perspective Grid Lines (Cyber Floor) -->
+  <g opacity="0.15">
+    <line x1="80" y1="540" x2="360" y2="400" stroke="#38bdf8" stroke-width="1"/>
+    <line x1="240" y1="540" x2="420" y2="400" stroke="#38bdf8" stroke-width="1"/>
+    <line x1="420" y1="540" x2="480" y2="400" stroke="#a855f7" stroke-width="1"/>
+    <line x1="600" y1="540" x2="540" y2="400" stroke="#ec4899" stroke-width="1"/>
+    <line x1="760" y1="540" x2="600" y2="400" stroke="#ec4899" stroke-width="1"/>
+    <line x1="900" y1="540" x2="680" y2="400" stroke="#38bdf8" stroke-width="1"/>
+    <!-- Floor horizontal lines -->
+    <line x1="160" y1="500" x2="840" y2="500" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="4 4"/>
+    <line x1="260" y1="450" x2="740" y2="450" stroke="#a855f7" stroke-width="0.8" stroke-dasharray="4 4"/>
+    <line x1="340" y1="415" x2="660" y2="415" stroke="#ec4899" stroke-width="0.8" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Twinkling Starfield -->
+  <g>
+    <circle cx="95" cy="70" r="1.5" fill="#22d3ee" class="twinkle-1"/>
+    <circle cx="160" cy="45" r="2" fill="#e2e8f0" class="twinkle-2"/>
+    <circle cx="320" cy="65" r="1.2" fill="#a855f7" class="twinkle-3"/>
+    <circle cx="480" cy="35" r="1.8" fill="#38bdf8" class="twinkle-1"/>
+    <circle cx="640" cy="55" r="1.4" fill="#ec4899" class="twinkle-2"/>
+    <circle cx="890" cy="85" r="2.2" fill="#22d3ee" class="twinkle-3"/>
+    <circle cx="915" cy="230" r="1.5" fill="#c084fc" class="twinkle-1"/>
+    <circle cx="80" cy="280" r="1.5" fill="#38bdf8" class="twinkle-2"/>
+    <circle cx="65" cy="430" r="1.8" fill="#f472b6" class="twinkle-3"/>
+    <circle cx="910" cy="420" r="1.6" fill="#22d3ee" class="twinkle-2"/>
+  </g>
+
+  <!-- Glowing Circuit Traces on Wall/Floor -->
+  <path d="M 120 180 L 190 180 L 230 220" fill="none" stroke="#22d3ee" stroke-width="1.8" opacity="0.6" class="flow-trace"/>
+  <circle cx="120" cy="180" r="3.5" fill="#22d3ee" filter="url(#softGlow)"/>
+  
+  <path d="M 540 230 L 620 230 L 670 180 L 730 180" fill="none" stroke="#a855f7" stroke-width="1.8" opacity="0.6" class="flow-trace"/>
+  <circle cx="730" cy="180" r="3.5" fill="#a855f7" filter="url(#softGlow)"/>
+
+  <path d="M 560 330 L 650 330 L 720 380 L 820 380" fill="none" stroke="#ec4899" stroke-width="1.5" opacity="0.5" class="flow-trace-rev"/>
+  <circle cx="820" cy="380" r="3" fill="#ec4899" filter="url(#softGlow)"/>
+
+  <!-- ════════════ 3D ISOMETRIC FLOATING CUBES ════════════ -->
+  <!-- Cube 1: Cyan / Tech Cube (Top-Left) -->
+  <g class="floating-cube1">
+    <!-- Top Face -->
+    <polygon points="120,70 145,55 170,70 145,85" fill="url(#cubeTop1)" stroke="#38bdf8" stroke-width="0.8"/>
+    <!-- Left Face -->
+    <polygon points="120,70 145,85 145,115 120,100" fill="url(#cubeLeft1)" stroke="#0284c7" stroke-width="0.8"/>
+    <!-- Right Face -->
+    <polygon points="145,85 170,70 170,100 145,115" fill="url(#cubeRight1)" stroke="#0369a1" stroke-width="0.8"/>
+    <!-- Floating Cube Glow -->
+    <circle cx="145" cy="85" r="28" fill="#38bdf8" opacity="0.15" filter="url(#highGlow)"/>
+    <text x="145" y="88" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">AI</text>
+  </g>
+
+  <!-- Cube 2: Pink / Flutter Cube (Bottom-Left) -->
+  <g class="floating-cube2">
+    <!-- Top Face -->
+    <polygon points="90,360 112,347 134,360 112,373" fill="url(#cubeTop2)" stroke="#f472b6" stroke-width="0.8"/>
+    <!-- Left Face -->
+    <polygon points="90,360 112,373 112,398 90,385" fill="url(#cubeLeft2)" stroke="#db2777" stroke-width="0.8"/>
+    <!-- Right Face -->
+    <polygon points="112,373 134,360 134,385 112,398" fill="url(#cubeRight2)" stroke="#be185d" stroke-width="0.8"/>
+    <circle cx="112" cy="373" r="24" fill="#f472b6" opacity="0.15" filter="url(#highGlow)"/>
+    <text x="112" y="377" font-family="'Courier New', monospace" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">&lt;/&gt;</text>
+  </g>
+
+  <!-- ════════════ 3D ISOMETRIC WORKSTATION DESK ════════════ -->
+  <!-- Desk Base Stand / Supports -->
+  <polygon points="210,470 230,470 230,410 210,410" fill="#0f172a"/>
+  <polygon points="730,470 750,470 750,410 730,410" fill="#0f172a"/>
+  
+  <!-- Desk Top Surface (3D Extrusion) -->
+  <!-- Bottom Thickness -->
+  <polygon points="150,422 790,422 780,432 160,432" fill="#090d16"/>
+  <!-- Top Surface with Beveled Perspective -->
+  <polygon points="170,395 770,395 800,422 140,422" fill="url(#deskTop)" stroke="#334155" stroke-width="1"/>
+  
+  <!-- Desk Glowing Neon Edge Trim -->
+  <line x1="140" y1="422" x2="800" y2="422" stroke="url(#deskEdge)" stroke-width="3" filter="url(#softGlow)"/>
+  <line x1="140" y1="422" x2="800" y2="422" stroke="#ffffff" stroke-width="1" opacity="0.8"/>
+
+  <!-- Mechanical Keyboard with RGB Underglow -->
+  <g transform="translate(320, 400)">
+    <rect x="0" y="0" width="135" height="18" rx="4" fill="#0b0f19" stroke="#334155" stroke-width="1"/>
+    <!-- RGB Key Matrix -->
+    <rect x="4" y="3" width="127" height="12" rx="2" fill="#1e293b"/>
+    <line x1="0" y1="18" x2="135" y2="18" stroke="url(#neonCyanPurple)" stroke-width="2" opacity="0.9" class="pulse-neon"/>
+  </g>
+  <!-- Cyber Mouse & Mousepad -->
+  <rect x="470" y="399" width="36" height="20" rx="3" fill="#0b0f19" stroke="#1e293b" stroke-width="0.8"/>
+  <ellipse cx="488" cy="409" rx="8" ry="5" fill="#334155" stroke="#22d3ee" stroke-width="0.8"/>
+
+  <!-- ════════════ MAIN HOLOGRAPHIC DUAL MONITOR ════════════ -->
+  <!-- Monitor Stand -->
+  <rect x="365" y="355" width="40" height="42" fill="#1e293b" rx="4"/>
+  <polygon points="340,397 430,397 420,393 350,393" fill="#334155"/>
+
+  <!-- Monitor Ambient Glow behind Bezel -->
+  <rect x="220" y="150" width="330" height="215" rx="14" fill="#22d3ee" opacity="0.12" filter="url(#highGlow)"/>
+  <rect x="220" y="150" width="330" height="215" rx="14" fill="#ec4899" opacity="0.08" filter="url(#highGlow)"/>
+
+  <!-- Monitor Frame with Neon Bezel -->
+  <rect x="225" y="155" width="320" height="205" rx="12" fill="#0b1120" stroke="url(#neonBorder)" stroke-width="2.5" class="pulse-neon"/>
+  
+  <!-- Monitor Display Screen -->
+  <rect x="230" y="160" width="310" height="195" rx="10" fill="url(#screenDisplay)"/>
+
+  <!-- Screen Content (Clipped to display boundary) -->
+  <g clip-path="url(#mainScreenClip)">
+    <!-- Terminal Header Bar -->
+    <rect x="230" y="160" width="310" height="22" fill="#131c31"/>
+    <circle cx="244" cy="171" r="3.5" fill="#ef4444"/>
+    <circle cx="255" cy="171" r="3.5" fill="#f59e0b"/>
+    <circle cx="266" cy="171" r="3.5" fill="#10b981"/>
+    <text x="385" y="175" font-family="'Courier New', monospace" font-size="9" fill="#94a3b8" text-anchor="middle">vanshika@developer-hub: ~/apidash</text>
+
+    <!-- Code Editor Lines -->
+    <text font-family="'Courier New', monospace" font-size="9.5" fill="#64748b" x="242" y="197">// 🚀 OpenSource Navigator &amp; API Dash</text>
+    <text font-family="'Courier New', monospace" font-size="9.5" x="242" y="213">
+      <tspan fill="#ec4899">class</tspan> <tspan fill="#38bdf8">GSoC2027Aspirant</tspan> <tspan fill="#c084fc">implements</tspan> <tspan fill="#facc15">Engineer</tspan> {
+    </text>
+    <text font-family="'Courier New', monospace" font-size="9.5" x="242" y="229">
+      <tspan fill="#a855f7">  final</tspan> <tspan fill="#94a3b8">focus =</tspan> <tspan fill="#4ade80">["RAG", "MCP", "AI-Agents"];</tspan>
+    </text>
+    <text font-family="'Courier New', monospace" font-size="9.5" x="242" y="245">
+      <tspan fill="#a855f7">  final</tspan> <tspan fill="#94a3b8">activeFoss =</tspan> <tspan fill="#22d3ee">"foss42/apidash";</tspan>
+    </text>
+    <text font-family="'Courier New', monospace" font-size="9.5" x="242" y="261">
+      <tspan fill="#ec4899">  Future&lt;void&gt;</tspan> <tspan fill="#38bdf8">shipImpact</tspan>() <tspan fill="#ec4899">async</tspan> {
+    </text>
+    <text font-family="'Courier New', monospace" font-size="9.5" x="242" y="277">
+      <tspan fill="#94a3b8">    await</tspan> <tspan fill="#f472b6">verifyPRsWithAI</tspan>();
+    </text>
+    <text font-family="'Courier New', monospace" font-size="9.5" x="242" y="293">
+      <tspan fill="#94a3b8">    await</tspan> <tspan fill="#22d3ee">preventUPIFraud</tspan>(); <tspan fill="#64748b">// ML 99%</tspan>
+    </text>
+    <text font-family="'Courier New', monospace" font-size="9.5" x="242" y="309">
+      <tspan fill="#94a3b8">    buildFuture(status:</tspan> <tspan fill="#4ade80">"Unstoppable"</tspan>);
+    </text>
+    <text font-family="'Courier New', monospace" font-size="9.5" fill="#38bdf8" x="242" y="325">  }</text>
+    <text font-family="'Courier New', monospace" font-size="9.5" fill="#e2e8f0" x="242" y="341">}</text>
+    <!-- Blinking Cursor -->
+    <rect x="254" y="333" width="6" height="11" rx="1" fill="#22d3ee" class="blink-cursor"/>
+
+    <!-- CRT Scanline Animation -->
+    <rect x="230" y="160" width="310" height="24" fill="#ffffff" opacity="0.08" class="scan-line"/>
+  </g>
+
+  <!-- ════════════ DEVELOPER CHARACTER (GIRL ENGINEER) ════════════ -->
+  <g transform="translate(560, 240)">
+    <!-- Ergonomic Chair Back with Neon Accent -->
+    <rect x="20" y="55" width="85" height="110" rx="14" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+    <rect x="26" y="60" width="73" height="98" rx="10" fill="#1e293b" opacity="0.7"/>
+    <line x1="20" y1="75" x2="105" y2="75" stroke="#a855f7" stroke-width="1.5" opacity="0.5"/>
+
+    <!-- Hair (Back Layer) -->
+    <ellipse cx="62" cy="52" rx="36" ry="42" fill="url(#hairGrad)"/>
+    <path d="M 28 50 Q 15 90 28 120" stroke="#1e1b4b" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M 96 50 Q 110 90 98 120" stroke="#1e1b4b" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <!-- Cyber Bun / Hair Tie -->
+    <circle cx="88" cy="22" r="14" fill="#2e1065"/>
+    <circle cx="88" cy="22" r="7" fill="#a855f7" opacity="0.8"/>
+
+    <!-- Shoulders & Cyber Hoodie -->
+    <path d="M 15 110 Q 62 90 110 110 L 118 175 Q 62 185 8 175 Z" fill="url(#hoodieGrad)"/>
+    <!-- Hoodie Neck & Drawstrings -->
+    <polygon points="50,105 74,105 62,125" fill="#581c87"/>
+    <line x1="56" y1="115" x2="52" y2="135" stroke="#22d3ee" stroke-width="1.5"/>
+    <line x1="68" y1="115" x2="72" y2="135" stroke="#ec4899" stroke-width="1.5"/>
+
+    <!-- Neck -->
+    <rect x="54" y="78" width="16" height="24" rx="6" fill="url(#skinGrad)"/>
+
+    <!-- Head & Face (Stylized Minimalist Anime/Tech) -->
+    <ellipse cx="62" cy="58" rx="26" ry="28" fill="url(#skinGrad)"/>
+    
+    <!-- Screen Reflection on Face -->
+    <path d="M 40 45 Q 55 58 45 75 Z" fill="#22d3ee" opacity="0.15"/>
+
+    <!-- Hair Front Bangs -->
+    <path d="M 38 42 Q 62 30 84 44 Q 72 32 50 32 Z" fill="#2e1065"/>
+    <path d="M 36 44 Q 46 62 42 70" stroke="#3b0764" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M 86 44 Q 80 62 84 70" stroke="#3b0764" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+    <!-- Glowing Cyber Headset with Neon Ring -->
+    <path d="M 35 55 Q 62 25 89 55" fill="none" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="36" cy="56" rx="6" ry="10" rx="4" fill="#0f172a" stroke="#22d3ee" stroke-width="1.5"/>
+    <circle cx="36" cy="56" r="3" fill="#22d3ee" class="pulse-neon"/>
+    <ellipse cx="88" cy="56" rx="6" ry="10" rx="4" fill="#0f172a" stroke="#ec4899" stroke-width="1.5"/>
+    <circle cx="88" cy="56" r="3" fill="#ec4899" class="pulse-neon"/>
+
+    <!-- Stylized Eyes & Glasses -->
+    <rect x="44" y="52" width="15" height="10" rx="3" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.9"/>
+    <rect x="65" y="52" width="15" height="10" rx="3" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.9"/>
+    <line x1="59" y1="56" x2="65" y2="56" stroke="#38bdf8" stroke-width="1.2"/>
+    <circle cx="51" cy="57" r="2" fill="#7c3aed"/>
+    <circle cx="72" cy="57" r="2" fill="#7c3aed"/>
+
+    <!-- Arms resting forward toward keyboard -->
+    <path d="M 18 115 Q -10 145 -15 165" stroke="#9333ea" stroke-width="16" stroke-linecap="round" fill="none"/>
+    <ellipse cx="-16" cy="166" rx="8" ry="6" fill="url(#skinGrad)"/>
+    <path d="M 106 115 Q 120 145 100 166" stroke="#9333ea" stroke-width="16" stroke-linecap="round" fill="none"/>
+    <ellipse cx="98" cy="168" rx="8" ry="6" fill="url(#skinGrad)"/>
+  </g>
+
+  <!-- ════════════ FLOATING HOLOGRAPHIC HUD CARDS ════════════ -->
+
+  <!-- Panel 1: Top-Left "ARCHITECTURE / RAG" (Slow Float) -->
+  <g class="floating-slow" transform="translate(45, 135)">
+    <!-- Glass Background with Neon Border -->
+    <rect x="0" y="0" width="165" height="110" rx="12" fill="url(#glassPanel)" stroke="#22d3ee" stroke-width="1.2" opacity="0.92"/>
+    <rect x="0" y="0" width="165" height="110" rx="12" fill="none" stroke="#22d3ee" stroke-width="3" opacity="0.2" filter="url(#softGlow)"/>
+    
+    <!-- Header -->
+    <rect x="0" y="0" width="165" height="24" rx="12" fill="#0d192e"/>
+    <circle cx="16" cy="12" r="3.5" fill="#22d3ee"/>
+    <text x="26" y="15" font-family="'Courier New', monospace" font-size="9" font-weight="bold" fill="#22d3ee">RAG PIPELINE</text>
+    <text x="148" y="15" font-family="'Courier New', monospace" font-size="8" fill="#64748b">99%</text>
+
+    <!-- Mini Node Graph Inside -->
+    <circle cx="35" cy="50" r="7" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="35" y="53" font-family="sans-serif" font-size="7" fill="#38bdf8" text-anchor="middle">Q</text>
+
+    <line x1="42" y1="50" x2="75" y2="50" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="3 2" class="flow-trace"/>
+
+    <circle cx="82" cy="50" r="7" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="82" y="53" font-family="sans-serif" font-size="7" fill="#a855f7" text-anchor="middle">V</text>
+
+    <line x1="89" y1="50" x2="122" y2="50" stroke="#ec4899" stroke-width="1.2" stroke-dasharray="3 2" class="flow-trace"/>
+
+    <circle cx="130" cy="50" r="8" fill="#1e293b" stroke="#ec4899" stroke-width="1.5"/>
+    <text x="130" y="53" font-family="sans-serif" font-size="7" fill="#ec4899" text-anchor="middle">AI</text>
+
+    <!-- Status Ticker -->
+    <rect x="12" y="74" width="141" height="22" rx="5" fill="#090f1d"/>
+    <circle cx="22" cy="85" r="3" fill="#10b981" class="pulse-neon"/>
+    <text x="32" y="88" font-family="'Courier New', monospace" font-size="8.5" fill="#a5f3fc">Context Injected ✓</text>
+  </g>
+
+  <!-- Panel 2: Bottom-Right "STATUS / GSOC HUD" (Medium Float) -->
+  <g class="floating-med" transform="translate(730, 240)">
+    <rect x="0" y="0" width="180" height="120" rx="12" fill="url(#glassPanel)" stroke="#ec4899" stroke-width="1.2" opacity="0.92"/>
+    <rect x="0" y="0" width="180" height="120" rx="12" fill="none" stroke="#ec4899" stroke-width="3" opacity="0.2" filter="url(#softGlow)"/>
+
+    <rect x="0" y="0" width="180" height="24" rx="12" fill="#1f1124"/>
+    <circle cx="16" cy="12" r="3.5" fill="#ec4899"/>
+    <text x="26" y="15" font-family="'Courier New', monospace" font-size="9" font-weight="bold" fill="#f472b6">MISSION CONTROL</text>
+
+    <text x="14" y="44" font-family="'Courier New', monospace" font-size="9" fill="#e2e8f0">🎯 GSoC 2027 Aspirant</text>
+    <text x="14" y="62" font-family="'Courier New', monospace" font-size="9" fill="#38bdf8">🤝 foss42/apidash</text>
+    <text x="14" y="80" font-family="'Courier New', monospace" font-size="9" fill="#f472b6">⚡ Gemini Ambassador</text>
+    <text x="14" y="98" font-family="'Courier New', monospace" font-size="9" fill="#4ade80">🤖 AI Agency Co-Founder</text>
+
+    <!-- Progress Indicator -->
+    <rect x="14" y="106" width="152" height="4" rx="2" fill="#1e293b"/>
+    <rect x="14" y="106" width="115" height="4" rx="2" fill="url(#neonCyanPurple)" class="pulse-neon"/>
+  </g>
+
+  <!-- Panel 3: Top-Right "3D GYROSCOPE / AI CORE ORB" -->
+  <g transform="translate(0, 0)">
+    <!-- Massive Radiant Glow -->
+    <circle cx="770" cy="115" r="75" fill="#a855f7" opacity="0.1" filter="url(#orbPulseBlur)"/>
+    <circle cx="770" cy="115" r="55" fill="#22d3ee" opacity="0.12" filter="url(#highGlow)"/>
+
+    <!-- Central Glowing Core Sphere -->
+    <circle cx="770" cy="115" r="32" fill="url(#orbCore)" filter="url(#softGlow)" class="pulse-orb"/>
+    <circle cx="762" cy="106" r="8" fill="#ffffff" opacity="0.6"/>
+    <text x="770" y="120" font-family="'Courier New', monospace" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle">AI</text>
+
+    <!-- Gyroscope Orbit Ring 1 (Cyan - Horizontal-ish) -->
+    <g class="orbit-ring-1">
+      <ellipse cx="770" cy="115" rx="58" ry="22" fill="none" stroke="#22d3ee" stroke-width="1.8" stroke-dasharray="8 6" opacity="0.85"/>
+      <circle cx="828" cy="115" r="4.5" fill="#22d3ee" filter="url(#softGlow)"/>
+    </g>
+
+    <!-- Gyroscope Orbit Ring 2 (Purple - Diagonal) -->
+    <g class="orbit-ring-2">
+      <ellipse cx="770" cy="115" rx="52" ry="52" fill="none" stroke="#a855f7" stroke-width="1.4" stroke-dasharray="6 8" opacity="0.75"/>
+      <circle cx="770" cy="63" r="4" fill="#ec4899" filter="url(#softGlow)"/>
+    </g>
+
+    <!-- Gyroscope Orbit Ring 3 (Pink - Steeper Angle) -->
+    <g class="orbit-ring-3">
+      <ellipse cx="770" cy="115" rx="66" ry="30" fill="none" stroke="#ec4899" stroke-width="1" stroke-dasharray="4 6" opacity="0.6"/>
+      <circle cx="715" cy="100" r="3" fill="#f472b6"/>
+    </g>
+  </g>
+
+  <!-- ════════════ BOTTOM CINEMATIC HUD STATUS BAR ════════════ -->
+  <g transform="translate(180, 485)">
+    <!-- Pill Container -->
+    <rect x="0" y="0" width="600" height="34" rx="17" fill="#090e1a" stroke="url(#neonCyanPurple)" stroke-width="1.2" opacity="0.95"/>
+    
+    <!-- Status Indicator 1 -->
+    <circle cx="28" cy="17" r="4.5" fill="#10b981" class="pulse-neon"/>
+    <text x="40" y="21" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#e2e8f0">CORE: ONLINE</text>
+
+    <text x="145" y="21" font-family="'Courier New', monospace" font-size="11" fill="#64748b">|</text>
+
+    <!-- Status Indicator 2 -->
+    <text x="165" y="21" font-family="'Courier New', monospace" font-size="11" fill="#38bdf8">PYTHON</text>
+    <text x="218" y="21" font-family="'Courier New', monospace" font-size="11" fill="#ec4899">FASTAPI</text>
+    <text x="280" y="21" font-family="'Courier New', monospace" font-size="11" fill="#a855f7">RAG/MCP</text>
+    <text x="345" y="21" font-family="'Courier New', monospace" font-size="11" fill="#38bdf8">FLUTTER</text>
+
+    <text x="410" y="21" font-family="'Courier New', monospace" font-size="11" fill="#64748b">|</text>
+
+    <!-- Sparks & Motto -->
+    <text x="428" y="21" font-family="'Courier New', monospace" font-size="11" fill="#fcd34d">✦</text>
+    <text x="444" y="21" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#f472b6">BUILD · CONTRIBUTE · SHIP</text>
+  </g>
+
+</svg>

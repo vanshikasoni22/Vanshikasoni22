@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 6" width="1200" height="6">
+  <defs>
+    <linearGradient id="dividerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#a855f7"/>
+      <stop offset="33%"  stop-color="#ec4899"/>
+      <stop offset="66%"  stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="shimmerOverlay" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="white" stop-opacity="0"/>
+      <stop offset="45%"  stop-color="white" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="white" stop-opacity="0.45"/>
+      <stop offset="55%"  stop-color="white" stop-opacity="0"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .divider-shimmer {
+        animation: shimmer-sweep 2.4s ease-in-out infinite;
+      }
+      @keyframes shimmer-sweep {
+        0%   { transform: translateX(-1200px); }
+        100% { transform: translateX(1200px); }
+      }
+      .divider-pulse {
+        animation: divider-pulse 2.5s ease-in-out infinite;
+      }
+      @keyframes divider-pulse {
+        0%   { opacity: 0.7; }
+        50%  { opacity: 1; }
+        100% { opacity: 0.7; }
+      }
+    </style>
+  </defs>
+
+  <!-- Base gradient bar -->
+  <rect x="0" y="0" width="1200" height="6" rx="3" fill="url(#dividerGrad)" class="divider-pulse"/>
+
+  <!-- Shimmer sweep overlay (clipped to bar shape) -->
+  <clipPath id="barClip">
+    <rect x="0" y="0" width="1200" height="6" rx="3"/>
+  </clipPath>
+  <rect x="0" y="0" width="1200" height="6" rx="3" fill="url(#shimmerOverlay)" clip-path="url(#barClip)" class="divider-shimmer"/>
+</svg>
