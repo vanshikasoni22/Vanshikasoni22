@@ -26,13 +26,33 @@
 
 ## 🧠 About Me
 
-I'm a second-year B.Tech CSE (AI/ML) student building toward a career in AI engineering and open-source development. My work spans LLM-powered developer tools, RAG pipelines, and client-facing automation systems — with a clear trajectory toward Google Summer of Code 2027. Alongside my studies, I co-founded an AI automation agency delivering production-grade n8n workflows and 3D/AR web experiences for real clients. I'm drawn to developer tooling because great tools multiply what engineers can build.
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/vanshikasoni22/Vanshikasoni22/main/assets/who-i-am.svg" width="380" alt="Who I Am - Keycap Animation" />
+
+</div>
+
+```python
+# ✨ The Vanshika Soni Protocol
+class Vanshika:
+    def __init__(self):
+        self.status        = "Sophomore B.Tech CSE (AI/ML) @ Newton School of Tech (ADYPU)"
+        self.mission       = "GSoC 2027 Aspirant & Open-Source Contributor"
+        self.craft         = "Co-founder @ AI Automation Agency (n8n + LLM APIs + Client Work)"
+        self.active_quest  = "Contributing to foss42/apidash (Dart & Flutter) ⚡"
+        self.leadership    = "Google Gemini Campus Ambassador 🎓"
+        self.stack_passion = ["RAG Pipelines", "AI Agents & MCP", "3D Web & AR", "Dev Tools"]
+
+    def philosophy(self):
+        return "Transforming complex workflows into clean, impactful software ✦"
+```
 
 <table>
-<tr><td>🎓 Education</td><td>B.Tech CSE (AI/ML) · Newton School of Technology (ADYPU) · 2nd Year</td></tr>
-<tr><td>🎯 Focus</td><td>AI/ML Engineering · Open-Source · Developer Tooling</td></tr>
-<tr><td>📍 Location</td><td>TODO</td></tr>
-<tr><td>⚡ Currently</td><td>Contributing to <a href="https://github.com/foss42/apidash">API Dash (foss42/apidash)</a> · Learning Dart &amp; Flutter</td></tr>
+<tr><td align="center">🎓 <b>Education</b></td><td>B.Tech CSE (AI/ML) · <b>Newton School of Technology (ADYPU)</b> · 2nd Year</td></tr>
+<tr><td align="center">🎯 <b>North Star</b></td><td><b>GSoC 2027 Aspirant</b> · Building developer tools that multiply engineering throughput</td></tr>
+<tr><td align="center">⚡ <b>Active Sprints</b></td><td>Contributing to <a href="https://github.com/foss42/apidash"><b>foss42/apidash</b></a> · Cracking Dart &amp; Flutter</td></tr>
+<tr><td align="center">🤖 <b>Agency &amp; Roles</b></td><td>Co-founder of AI automation agency (n8n workflows, 3D configurators, AR try-on) · <b>Google Gemini Campus Ambassador</b></td></tr>
+<tr><td align="center">📍 <b>Location</b></td><td>TODO</td></tr>
 </table>
 
 <img src="https://raw.githubusercontent.com/vanshikasoni22/Vanshikasoni22/main/assets/divider.svg" width="100%" alt="---"/>
@@ -219,9 +239,9 @@ flowchart LR
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-vanshika--soni-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vanshika-soni-16b853367/)
 [![Email](https://img.shields.io/badge/Email-vanshikasoni468@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vanshikasoni468@gmail.com)
 
-<br>
+<br><br>
 
-*"Let's build something meaningful."*
+<img src="https://raw.githubusercontent.com/vanshikasoni22/Vanshikasoni22/main/assets/under-ctrl.svg" width="320" alt="Everything is Under Ctrl Animation" />
 
 </div>
 

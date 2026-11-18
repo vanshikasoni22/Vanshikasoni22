@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 380" width="100%" height="100%">
+  <defs>
+    <!-- Modern Gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+
+    <!-- Keycap Gradients -->
+    <linearGradient id="keycapDish" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="60%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+
+    <linearGradient id="keycapSide" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+
+    <linearGradient id="rgbUnderglow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+
+    <filter id="keyGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="deepShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="12" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+
+    <style>
+      .keycap-click {
+        animation: keyPress 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        transform-origin: center;
+      }
+      .rgb-pulse {
+        animation: rgbPulse 2.8s ease-in-out infinite;
+      }
+      .click-ripple {
+        animation: rippleEffect 2.8s ease-out infinite;
+      }
+      .type-glow {
+        animation: textGlow 3s ease-in-out infinite;
+      }
+
+      @keyframes keyPress {
+        0%, 35%, 100% {
+          transform: translateY(0px) scale(1);
+        }
+        42% {
+          transform: translateY(8px) scale(0.97);
+        }
+        50% {
+          transform: translateY(0px) scale(1);
+        }
+      }
+
+      @keyframes rgbPulse {
+        0%, 35%, 100% {
+          opacity: 0.35;
+          filter: drop-shadow(0 0 6px rgba(34, 211, 238, 0.4));
+        }
+        42% {
+          opacity: 1;
+          filter: drop-shadow(0 0 25px rgba(236, 72, 153, 0.9));
+        }
+        50% {
+          opacity: 0.5;
+        }
+      }
+
+      @keyframes rippleEffect {
+        0%, 38% {
+          r: 70px;
+          opacity: 0;
+        }
+        43% {
+          r: 75px;
+          opacity: 0.8;
+          stroke-width: 2.5px;
+        }
+        65% {
+          r: 120px;
+          opacity: 0;
+          stroke-width: 0.5px;
+        }
+        100% {
+          r: 120px;
+          opacity: 0;
+        }
+      }
+
+      @keyframes textGlow {
+        0%, 100% {
+          letter-spacing: 2px;
+        }
+        50% {
+          letter-spacing: 2.5px;
+        }
+      }
+    </style>
+  </defs>
+
+  <!-- Typography: EVERY THING IS UNDER -->
+  <g text-anchor="middle" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" fill="url(#textGrad)" transform="translate(230, 48)">
+    <text x="0" y="0" font-size="44" letter-spacing="3" class="type-glow">EVERY</text>
+    <text x="0" y="46" font-size="44" letter-spacing="3" class="type-glow">THING</text>
+    <text x="0" y="90" font-size="36" letter-spacing="2" fill="#22d3ee" opacity="0.95">IS UNDER</text>
+  </g>
+
+  <!-- Mechanical Keycap Section -->
+  <g transform="translate(230, 245)">
+    <!-- RGB Neon Underglow Beneath Switch -->
+    <rect x="-85" y="-60" width="170" height="135" rx="36" fill="url(#rgbUnderglow)" class="rgb-pulse" filter="url(#keyGlow)"/>
+
+    <!-- Click Shockwave Ring -->
+    <circle cx="0" cy="8" r="70" fill="none" stroke="#22d3ee" class="click-ripple"/>
+
+    <!-- Keycap Button (Animated Click Press) -->
+    <g class="keycap-click">
+      <!-- Cast Shadow -->
+      <rect x="-70" y="-45" width="140" height="115" rx="26" fill="#050811" filter="url(#deepShadow)"/>
+      
+      <!-- Keycap Housing & Skirt (3D Bevel Body) -->
+      <rect x="-70" y="-48" width="140" height="115" rx="26" fill="url(#keycapSide)"/>
+      <rect x="-70" y="-52" width="140" height="112" rx="24" fill="#cbd5e1"/>
+
+      <!-- Keycap Dish (Concave Top Face) -->
+      <rect x="-56" y="-44" width="112" height="88" rx="18" fill="url(#keycapDish)"/>
+      
+      <!-- Subtle Specular Reflection Lines -->
+      <path d="M -50 -40 L 50 -40 Q 52 -40 48 -32 L -44 -32 Q -52 -32 -50 -40 Z" fill="#ffffff" opacity="0.6"/>
+      <rect x="-52" y="-40" width="104" height="80" rx="14" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.4"/>
+
+      <!-- "Ctrl" Label -->
+      <text x="-40" y="-12" font-family="'Inter', -apple-system, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Ctrl</text>
+
+      <!-- Tactile Dimple / Subtext -->
+      <circle cx="0" cy="18" r="2.5" fill="#94a3b8" opacity="0.6"/>
+    </g>
+  </g>
+
+  <!-- Bottom Badge: "Everything Under Control" -->
+  <g transform="translate(230, 355)" text-anchor="middle">
+    <rect x="-120" y="-14" width="240" height="26" rx="13" fill="#0f172a" stroke="#22d3ee" stroke-width="1" opacity="0.9"/>
+    <circle cx="-100" cy="-1" r="3.5" fill="#10b981"/>
+    <text x="8" y="3" font-family="'Courier New', monospace" font-size="10" font-weight="bold" fill="#38bdf8" letter-spacing="1">EVERYTHING UNDER CONTROL</text>
+  </g>
+</svg>

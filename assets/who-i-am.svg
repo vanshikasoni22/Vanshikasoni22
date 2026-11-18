@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 200" width="100%" height="100%">
+  <defs>
+    <!-- 3D Keycap Gradients -->
+    <linearGradient id="keyTopGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="30%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+
+    <linearGradient id="keyTopGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="30%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+
+    <linearGradient id="keyBevelLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <linearGradient id="keyBevelDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="keyShadow" x="-20%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .key-press-1 {
+        animation: keyPress1 3.2s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .key-press-2 {
+        animation: keyPress2 3.2s ease-in-out 0.4s infinite;
+        transform-origin: center;
+      }
+      .arrow-wiggle {
+        animation: arrowWiggle 2.5s ease-in-out infinite;
+      }
+      .text-glow {
+        animation: textPulse 3s ease-in-out infinite;
+      }
+
+      @keyframes keyPress1 {
+        0%, 100% { transform: translateY(0px); }
+        45% { transform: translateY(0px); }
+        50% { transform: translateY(5px); }
+        55% { transform: translateY(0px); }
+      }
+      @keyframes keyPress2 {
+        0%, 100% { transform: translateY(0px); }
+        45% { transform: translateY(0px); }
+        50% { transform: translateY(5px); }
+        55% { transform: translateY(0px); }
+      }
+      @keyframes arrowWiggle {
+        0%, 100% { transform: rotate(0deg); }
+        50% { transform: rotate(-3deg) scale(1.03); }
+      }
+      @keyframes textPulse {
+        0%, 100% { opacity: 0.9; }
+        50% { opacity: 1; filter: drop-shadow(0 0 8px rgba(34, 211, 238, 0.6)); }
+      }
+    </style>
+  </defs>
+
+  <!-- Handwritten "Who" -->
+  <g class="arrow-wiggle" transform="translate(45, 80)">
+    <text x="0" y="0" font-family="'Comic Sans MS', 'Caveat', 'Marker Felt', cursive, sans-serif" font-size="44" font-weight="900" fill="#22d3ee" class="text-glow" transform="rotate(-10)">Who</text>
+    <!-- Hand-drawn curved arrow pointing to keycaps -->
+    <path d="M 50 15 Q 90 40 125 35" fill="none" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="2 0"/>
+    <path d="M 115 28 L 128 35 L 118 43" fill="none" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 3D Keycap 1: [ I ] -->
+  <g class="key-press-1" transform="translate(195, 35)">
+    <!-- Base / Bottom Shadow -->
+    <rect x="0" y="12" width="105" height="105" rx="22" fill="#0c1222" filter="url(#keyShadow)"/>
+    <!-- Keycap Body (Front/Side Extrusion) -->
+    <rect x="0" y="6" width="105" height="105" rx="20" fill="url(#keyBevelDark)"/>
+    <rect x="0" y="4" width="105" height="102" rx="20" fill="#1e3a8a"/>
+    <!-- Keycap Top Dish (3D Curved Concave Surface) -->
+    <rect x="12" y="10" width="81" height="81" rx="14" fill="url(#keyTopGrad)"/>
+    <!-- Top Highlight Bevel -->
+    <path d="M 16 12 L 89 12 Q 91 12 87 20 L 23 20 Q 14 20 16 12 Z" fill="url(#keyBevelLight)"/>
+    <!-- Inner Dish Glow -->
+    <rect x="15" y="13" width="75" height="75" rx="12" fill="none" stroke="#93c5fd" stroke-width="1.2" opacity="0.6"/>
+    <!-- Letter Label -->
+    <text x="52" y="62" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="34" font-weight="900" fill="#0f172a" text-anchor="middle" filter="drop-shadow(0 1px 1px rgba(255,255,255,0.4))">I</text>
+  </g>
+
+  <!-- 3D Keycap 2: [ AM ] -->
+  <g class="key-press-2" transform="translate(325, 35)">
+    <!-- Base / Bottom Shadow -->
+    <rect x="0" y="12" width="135" height="105" rx="22" fill="#0c1222" filter="url(#keyShadow)"/>
+    <!-- Keycap Body (Front/Side Extrusion) -->
+    <rect x="0" y="6" width="135" height="105" rx="20" fill="url(#keyBevelDark)"/>
+    <rect x="0" y="4" width="135" height="102" rx="20" fill="#581c87"/>
+    <!-- Keycap Top Dish -->
+    <rect x="12" y="10" width="111" height="81" rx="14" fill="url(#keyTopGrad2)"/>
+    <!-- Top Highlight Bevel -->
+    <path d="M 16 12 L 119 12 Q 121 12 117 20 L 23 20 Q 14 20 16 12 Z" fill="url(#keyBevelLight)"/>
+    <!-- Inner Dish Glow -->
+    <rect x="15" y="13" width="105" height="75" rx="12" fill="none" stroke="#e9d5ff" stroke-width="1.2" opacity="0.6"/>
+    <!-- Letter Label -->
+    <text x="67" y="61" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#1e1b4b" text-anchor="middle" letter-spacing="1" filter="drop-shadow(0 1px 1px rgba(255,255,255,0.4))">AM</text>
+  </g>
+
+  <!-- Bottom Subtitle / Accent -->
+  <g transform="translate(270, 180)">
+    <text x="0" y="0" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#ec4899" text-anchor="middle" letter-spacing="3" class="text-glow">✦ DEVELOPER · BUILDER · EXPLORER ✦</text>
+  </g>
+</svg>
