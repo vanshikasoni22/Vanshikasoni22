@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 170" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 160" width="100%" height="100%">
   <defs>
-    <!-- Matcha/Sage Green Keycap Gradients (inspired by reference photo) -->
+    <!-- Matcha/Sage Green Realistic Keycap Gradients -->
     <linearGradient id="matchaTop" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#a3e635"/>
       <stop offset="60%" stop-color="#84cc16"/>
@@ -12,25 +12,25 @@
       <stop offset="100%" stop-color="#365314"/>
     </linearGradient>
 
-    <filter id="keyShadow" x="-20%" y="-20%" width="150%" height="150%">
-      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.45"/>
+    <filter id="keyShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
     </filter>
 
     <style>
-      .keycap-press {
+      .key-inner-1 {
         animation: keyPress 3s ease-in-out infinite;
       }
-      .keycap-press-delay {
-        animation: keyPress 3s ease-in-out 0.25s infinite;
+      .key-inner-2 {
+        animation: keyPress 3s ease-in-out 0.3s infinite;
       }
       .doodle-float {
-        animation: doodleWiggle 3.5s ease-in-out infinite;
+        animation: doodleWiggle 4s ease-in-out infinite;
       }
 
       @keyframes keyPress {
         0%, 100% { transform: translateY(0px); }
         45% { transform: translateY(0px); }
-        50% { transform: translateY(5px); }
+        50% { transform: translateY(6px); }
         55% { transform: translateY(0px); }
       }
       @keyframes doodleWiggle {
@@ -41,53 +41,57 @@
   </defs>
 
   <!-- Left: Handwritten "Who" + Hand-drawn Arrow -->
-  <g class="doodle-float" transform="translate(35, 30)">
-    <!-- Handwritten "Who" text as high-contrast paths -->
-    <text x="35" y="42" font-family="'Caveat', 'Comic Sans MS', 'Segoe Print', cursive, sans-serif" font-size="42" font-weight="bold" fill="#f8fafc" letter-spacing="1">Who</text>
+  <g class="doodle-float">
+    <text x="60" y="68" font-family="'Caveat', 'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="48" font-weight="bold" fill="#ffffff" letter-spacing="1">Who</text>
     
-    <!-- Curved Doodle Arrow pointing to first keycap -->
-    <path d="M 65 52 Q 100 75 118 70" fill="none" stroke="#f8fafc" stroke-width="2.5" stroke-linecap="round"/>
-    <path d="M 108 63 L 120 70 L 110 77" fill="none" stroke="#f8fafc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Curved Doodle Arrow pointing to [ I ] keycap -->
+    <path d="M 105 75 Q 135 92 150 82" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 140 76 L 152 82 L 144 91" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 
-  <!-- Center-Left Keycap: [ I ] -->
-  <g class="keycap-press" transform="translate(165, 45)">
-    <!-- Base Shadow -->
-    <rect x="0" y="6" width="76" height="76" rx="18" fill="#0c1222" filter="url(#keyShadow)"/>
-    <!-- Keycap Skirt/Body (Extrusion) -->
-    <rect x="0" y="3" width="76" height="76" rx="17" fill="url(#matchaSide)"/>
-    <rect x="0" y="1" width="76" height="74" rx="17" fill="#4d7c0f"/>
-    <!-- Keycap Top Dish (Concave Spherical Dish) -->
-    <rect x="8" y="7" width="60" height="60" rx="12" fill="url(#matchaTop)"/>
-    <!-- Subtle Top Highlight Rim -->
-    <path d="M 12 9 L 64 9 Q 66 9 63 15 L 17 15 Q 11 15 12 9 Z" fill="#ffffff" opacity="0.35"/>
-    <rect x="10" y="9" width="56" height="56" rx="10" fill="none" stroke="#bef264" stroke-width="1" opacity="0.6"/>
-    <!-- Letter "I" -->
-    <text x="38" y="48" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="28" font-weight="800" fill="#14532d" text-anchor="middle">I</text>
+  <!-- Keycap 1: [ I ] (Outer <g> fixes the position, inner <g> animates press) -->
+  <g transform="translate(165, 36)">
+    <g class="key-inner-1">
+      <!-- Drop Shadow Base -->
+      <rect x="0" y="8" width="80" height="80" rx="18" fill="#0b1120" filter="url(#keyShadow)"/>
+      <!-- Keycap Beveled Body/Skirt -->
+      <rect x="0" y="4" width="80" height="80" rx="18" fill="url(#matchaSide)"/>
+      <rect x="0" y="1" width="80" height="78" rx="18" fill="#4d7c0f"/>
+      <!-- Top Dish (Concave Face) -->
+      <rect x="8" y="7" width="64" height="64" rx="13" fill="url(#matchaTop)"/>
+      <!-- Subtle Specular Reflection -->
+      <path d="M 12 9 L 68 9 Q 70 9 66 16 L 18 16 Q 11 16 12 9 Z" fill="#ffffff" opacity="0.35"/>
+      <rect x="10" y="9" width="60" height="60" rx="11" fill="none" stroke="#bef264" stroke-width="1" opacity="0.6"/>
+      <!-- Letter "I" -->
+      <text x="40" y="50" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="30" font-weight="900" fill="#14532d" text-anchor="middle">I</text>
+    </g>
   </g>
 
-  <!-- Center-Right Keycap: [ AM ] -->
-  <g class="keycap-press-delay" transform="translate(255, 45)">
-    <!-- Base Shadow -->
-    <rect x="0" y="6" width="86" height="76" rx="18" fill="#0c1222" filter="url(#keyShadow)"/>
-    <!-- Keycap Skirt/Body (Extrusion) -->
-    <rect x="0" y="3" width="86" height="76" rx="17" fill="url(#matchaSide)"/>
-    <rect x="0" y="1" width="86" height="74" rx="17" fill="#4d7c0f"/>
-    <!-- Keycap Top Dish -->
-    <rect x="8" y="7" width="70" height="60" rx="12" fill="url(#matchaTop)"/>
-    <!-- Subtle Top Highlight Rim -->
-    <path d="M 12 9 L 74 9 Q 76 9 73 15 L 17 15 Q 11 15 12 9 Z" fill="#ffffff" opacity="0.35"/>
-    <rect x="10" y="9" width="66" height="56" rx="10" fill="none" stroke="#bef264" stroke-width="1" opacity="0.6"/>
-    <!-- Letter "AM" -->
-    <text x="43" y="47" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="22" font-weight="800" fill="#14532d" text-anchor="middle" letter-spacing="1">AM</text>
+  <!-- Keycap 2: [ AM ] -->
+  <g transform="translate(265, 36)">
+    <g class="key-inner-2">
+      <!-- Drop Shadow Base -->
+      <rect x="0" y="8" width="94" height="80" rx="18" fill="#0b1120" filter="url(#keyShadow)"/>
+      <!-- Keycap Beveled Body/Skirt -->
+      <rect x="0" y="4" width="94" height="80" rx="18" fill="url(#matchaSide)"/>
+      <rect x="0" y="1" width="94" height="78" rx="18" fill="#4d7c0f"/>
+      <!-- Top Dish (Concave Face) -->
+      <rect x="8" y="7" width="78" height="64" rx="13" fill="url(#matchaTop)"/>
+      <!-- Subtle Specular Reflection -->
+      <path d="M 12 9 L 82 9 Q 84 9 80 16 L 18 16 Q 11 16 12 9 Z" fill="#ffffff" opacity="0.35"/>
+      <rect x="10" y="9" width="74" height="60" rx="11" fill="none" stroke="#bef264" stroke-width="1" opacity="0.6"/>
+      <!-- Letter "AM" -->
+      <text x="47" y="49" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="24" font-weight="900" fill="#14532d" text-anchor="middle" letter-spacing="1">AM</text>
+    </g>
   </g>
 
-  <!-- Right: Doodle Arrow + Sparkle -->
-  <g class="doodle-float" transform="translate(355, 80)">
-    <!-- Curved Arrow from second keycap pointing down -->
-    <path d="M 0 10 Q 15 35 32 30" fill="none" stroke="#f8fafc" stroke-width="2.5" stroke-linecap="round"/>
-    <path d="M 22 25 L 34 30 L 26 38" fill="none" stroke="#f8fafc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <!-- Decorative Hand-drawn Star Sparkle -->
-    <text x="42" y="45" font-family="'Caveat', cursive, sans-serif" font-size="28" font-weight="bold" fill="#a3e635">✦</text>
+  <!-- Right: Hand-drawn Exit Arrow + Sparkle -->
+  <g class="doodle-float">
+    <!-- Curved Doodle Arrow pointing down from [ AM ] -->
+    <path d="M 375 90 Q 395 110 415 102" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 405 98 L 418 102 L 412 112" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Decorative Hand-drawn Sparkle -->
+    <text x="432" y="118" font-family="'Caveat', cursive, sans-serif" font-size="34" font-weight="bold" fill="#a3e635">✦</text>
   </g>
 </svg>
